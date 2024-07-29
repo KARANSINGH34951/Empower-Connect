@@ -1,19 +1,43 @@
-import video from "../utilis/video/invideo-ai-720 Empower Connect_ Transforming Lives, One 2024-07-27.mp4"
+import video from "../utilis/video/invideo-ai-720 Empower Connect_ Bridging the Gap to End 2024-07-28.mp4"
+import { useEffect } from "react";
+import gsap from "gsap";
+import { Link } from "react-router-dom";
+
 
 const Bgvideoplayer = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".hero-text",
+      { opacity: 0, y: -50 },
+      { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+    );
+    gsap.fromTo(
+      ".cta-buttons",
+      { opacity: 0, scale: 0.8 },
+      { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)", delay: 0.5 }
+    );
+  }, []);
   return (
     <div className='relative bg-container h-[500px] overflow-hidden'>
-    <video autoPlay muted loop id='myVideo' className='absolute w-full h-full object-cover'>
+    <video autoPlay muted loop id='myVideo' className='absolute w-full object-cover'>
       <source src={video} type='video/mp4' />
     </video>
 
-    <div className='relative z-10 flex flex-col items-center justify-center h-full text-center text-black'>
-      <h1 className='text-7xl font-bold mb-5 '>Empower Connect</h1>
-      <p className='text-4xl mb-5'>Transforming Lives, One Connection at a Time</p>
-      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-        Get Started
-      </button>
-    </div>
+ <header className="w-full max-w-4xl mx-auto text-center py-8">
+      <h1 className="text-6xl font-bold text-gray-800 hero-text">
+        Optimize Your Code Effortlessly
+      </h1>
+      <p className="mt-4 text-3xl text-gray-600 hero-text">
+        Our platform provides advanced code review and optimization services to enhance your coding efficiency.
+      </p>
+      <div className="mt-8 cta-buttons flex justify-center space-x-4">
+        <Link to="/signup">
+          <button className="px-6 py-3 bg-green-500 text-white text-lg rounded-md hover:bg-green-600 transition-colors">
+            Lets get Started
+          </button>
+        </Link>
+      </div>
+    </header>
   </div>
   )
 }
