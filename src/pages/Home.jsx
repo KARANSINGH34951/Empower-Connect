@@ -7,11 +7,7 @@ const Home = () => {
     <div>
       
         <Navbar/>
-     
-       
         <Bgvideoplayer/>
-        
-       
         <h1>hello</h1>
        <FeaturesSection/>
       
