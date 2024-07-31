@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey:  import.meta.env.VITE_API_KEY,
   authDomain: "ibm-skill.firebaseapp.com",
   projectId: "ibm-skill",
   storageBucket: "ibm-skill.appspot.com",
@@ -13,7 +13,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
-export default app;
+export const app = initializeApp(firebaseConfig);
