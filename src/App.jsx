@@ -1,5 +1,7 @@
 import './App.css'
-import Home from '../src/pages/Home'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   
@@ -7,7 +9,12 @@ function App() {
   return (
     <>
      <div > {/* Change bg-blue-100 to your preferred Tailwind color class */}
-      <Home/>
+      <Navbar/>
+      <main>
+        <Outlet/>
+      </main>
+      <Footer/>
+      
     </div>
     </>
   )

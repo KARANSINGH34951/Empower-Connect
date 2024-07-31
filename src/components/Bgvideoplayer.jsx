@@ -18,11 +18,13 @@ const Bgvideoplayer = () => {
     );
   }, []);
   return (
-    <div className='relative bg-container h-[500px] overflow-hidden'>
+
+    <div className='bg-container overflow-hidden a w-full h-screen'>
     <video autoPlay muted loop id='myVideo' className='absolute w-full object-cover'>
       <source src={video} type='video/mp4' />
     </video>
-    <header className="w-full max-w-4xl mx-auto text-center py-8">
+
+    <div className="w-full max-w-4xl mx-auto text-center py-8">
       <h1 className="text-6xl font-bold text-gray-800 hero-text">
         Empower Connect: Join the Fight Against Poverty
       </h1>
@@ -36,23 +38,8 @@ const Bgvideoplayer = () => {
           </button>
         </Link>
       </div>
-    </header>
+    </div>
 
- {/* <header className="w-full max-w-4xl mx-auto text-center py-8">
-      <h1 className="text-6xl font-bold text-gray-800 hero-text">
-        Optimize Your Code Effortlessly
-      </h1>
-      <p className="mt-4 text-3xl text-gray-600 hero-text">
-        Our platform provides advanced code review and optimization services to enhance your coding efficiency.
-      </p>
-      <div className="mt-8 cta-buttons flex justify-center space-x-4">
-        <Link to="/signup">
-          <button className="px-6 py-3 bg-green-500 text-white text-lg rounded-md hover:bg-green-600 transition-colors">
-            Lets get Started
-          </button>
-        </Link>
-      </div>
-    </header> */}
   </div>
   )
 }

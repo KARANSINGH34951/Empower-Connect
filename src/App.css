@@ -1,0 +1,5 @@
+/* Ensure the body and html allow scrolling */
+html, body {
+  height: auto;
+  overflow: auto;
+}

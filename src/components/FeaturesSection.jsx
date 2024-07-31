@@ -1,6 +1,5 @@
-import React from 'react';
 import FeatureCard from './FeatureCard';
-import { FaUsers, FaHandsHelping, FaBriefcase, FaBookOpen, FaDonate } from 'react-icons/fa';
+import { FaUsers, FaHandsHelping, FaBriefcase, FaBookOpen, FaDonate, FaLightbulb } from 'react-icons/fa';
 
 const FeaturesSection = () => {
   const features = [
@@ -28,11 +27,16 @@ const FeaturesSection = () => {
       Icon: FaDonate,
       title: 'Donation and Fundraising',
       description: 'Contribute to causes and support individuals in need through donations.'
+    },
+    {
+      Icon: FaLightbulb,
+      title: 'Innovation Hub',
+      description: 'Explore innovative projects and ideas to make a difference in the community.'
     }
   ];
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-gray-100 relative">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-8">Features of Our Platform</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
