@@ -1,22 +1,25 @@
-import Navbar from '../components/Navbar'
-import Bgvideoplayer from '../components/Bgvideoplayer'
-import FeaturesSection from '../components/FeaturesSection'
-import Footer from '../components/Footer'
-import TwoColumnSection from '../components/TwoColumnSection'
-import Counter from '../components/Counter'
+import { useSelector } from 'react-redux';
+import Bgvideoplayer from '../components/Bgvideoplayer';
+import FeaturesSection from '../components/FeaturesSection';
+import TwoColumnSection from '../components/TwoColumnSection';
+import Counter from '../components/Counter';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => {
-  return (
-    <div>     
-    
-      <Bgvideoplayer/>
-      <Counter/>
-      <FeaturesSection/> 
-      <TwoColumnSection/>   
-      
-      
-    </div>
-  )
-}
+  const user = useSelector((state) => state.user);
 
-export default Home
+  return (
+    <div>
+      <Bgvideoplayer />
+      {!user.loggedIn && <Counter />}
+      <FeaturesSection />
+      {!user.loggedIn && (
+        <ScrollAnimation animateIn="fadeIn">
+          <TwoColumnSection />
+        </ScrollAnimation>
+      )}
+    </div>
+  );
+};
+
+export default Home;
