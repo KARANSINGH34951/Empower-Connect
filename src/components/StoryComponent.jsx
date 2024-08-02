@@ -1,5 +1,3 @@
-// StoryComponent.js
-import React from 'react';
 
 const StoryComponent = ({ story, onReadMore }) => {
   return (

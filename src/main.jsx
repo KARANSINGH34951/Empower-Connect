@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Signup from './pages/Signup.jsx'
 import store from '../src/utilis/strore.jsx';
+import JobResourcePage from './pages/JobResourcePage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup />,
+      },
+      {
+        path: '/jobresource',
+        element: <JobResourcePage />,
       }
      
     ],

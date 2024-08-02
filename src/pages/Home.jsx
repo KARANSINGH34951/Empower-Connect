@@ -14,6 +14,7 @@ const Home = () => {
     <div>
         <Slider/>
         <StorySection />
+        
        
       {!user.loggedIn &&  <Bgvideoplayer />}
       {!user.loggedIn && <Counter />}
