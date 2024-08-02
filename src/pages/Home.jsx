@@ -4,13 +4,18 @@ import FeaturesSection from '../components/FeaturesSection';
 import TwoColumnSection from '../components/TwoColumnSection';
 import Counter from '../components/Counter';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Slider from '../components/Slider';
+import StorySection from '../components/StorySection';
 
 const Home = () => {
   const user = useSelector((state) => state.user);
 
   return (
     <div>
-      <Bgvideoplayer />
+        <Slider/>
+        <StorySection />
+       
+      {!user.loggedIn &&  <Bgvideoplayer />}
       {!user.loggedIn && <Counter />}
       <FeaturesSection />
       {!user.loggedIn && (

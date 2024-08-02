@@ -19,7 +19,7 @@ const Bgvideoplayer = () => {
   }, []);
   return (
 
-    <div className='bg-container overflow-hidden a w-full h-screen'>
+    <div className='bg-container overflow-hidden relative w-full h-screen'>
     <video autoPlay muted loop id='myVideo' className='absolute w-full object-cover'>
       <source src={video} type='video/mp4' />
     </video>
