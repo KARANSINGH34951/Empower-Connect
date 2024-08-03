@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Herotext = () => {
   return (
@@ -16,12 +17,14 @@ const Herotext = () => {
           We invite you to be part of this transformative journey. Whether you're a community leader, an aspiring entrepreneur, or someone passionate about social change, there are many ways to get involved:
         </p>
         <div className="flex justify-center gap-4">
-          <a
-            href="/volunteer"
+         <Link to="/volunter">
+         <a
+            href="#"
             className="bg-green-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
           >
             Volunteer
           </a>
+         </Link>
           <a
             href="/donate"
             className="bg-yellow-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 transition"

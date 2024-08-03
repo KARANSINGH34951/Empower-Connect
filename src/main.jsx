@@ -9,6 +9,7 @@ import Signup from './pages/Signup.jsx'
 import store from '../src/utilis/strore.jsx';
 import JobResourcePage from './pages/JobResourcePage.jsx'
 import About from './pages/About.jsx'
+import Volunter from './pages/Volunter.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/aboutus',
         element: <About />,
+      },
+      {
+        path: '/volunter',
+        element: <Volunter />,
       }
      
     ],

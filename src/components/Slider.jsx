@@ -9,8 +9,8 @@ const SliderComponent = () => {
   return (
     <AutoplaySlider
       play={true}
-      cancelOnInteraction={false} // should stop playing on user interaction
-      interval={2000} // time in milliseconds
+      cancelOnInteraction={false}
+      interval={1000} 
     >
       <div className='w-full h-full'>
       <img 
