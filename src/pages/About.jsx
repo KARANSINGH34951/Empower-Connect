@@ -4,7 +4,7 @@ import AboutUs from '../components/AboutUs';
 
 const About = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center py-10">
+    <div className=" min-h-screen flex items-center justify-center py-10">
       <div className="container mx-auto px-4 my-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
@@ -15,7 +15,7 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold mb-4 text-center text-blue-700">Our Mission: Redefining Possibilities</h2>
             <p className="text-gray-700 text-base mb-4">
-              Welcome to <span className="font-semibold text-blue-500">[Your Website Name]</span>, where we believe that poverty is not just a statistic but a challenge we can collectively overcome. Our mission is to transform the way we address poverty by creating innovative solutions and fostering community-driven change.
+              Welcome to <span className="font-semibold text-blue-500">Empower Connect</span>, where we believe that poverty is not just a statistic but a challenge we can collectively overcome. Our mission is to transform the way we address poverty by creating innovative solutions and fostering community-driven change.
             </p>
           </motion.div>
           <motion.div

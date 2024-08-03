@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import stories from '../utilis/storiesData';
 import StoryComponent from './StoryComponent';
 import Popup from './Popup';
@@ -15,7 +15,7 @@ const StorySection = () => {
   };
 
   return (
-    <div className="container w-full m-20">
+    <div className="container w-full m-20 text-white">
       <h1 className="text-6xl font-bold text-center mb-10">Life-Changing Stories</h1>
       <div className="flex justify-center items-center">
         <div className="flex flex-wrap justify-center mx-2">

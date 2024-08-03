@@ -29,16 +29,16 @@ const Bgvideoplayer = () => {
         <source src={video} type="video/mp4" />
       </video>
 
-      <div className="relative z-10 w-full max-w-4xl mx-auto text-center py-32">
-        <h1 className="text-6xl font-bold text-black hero-text">
+      <div className="relative z-10 w-full max-w-4xl mx-auto text-center py-32 px-4">
+        <h1 className="text-4xl md:text-6xl font-bold text-black hero-text">
           Empower Connect: Join the Fight Against Poverty
         </h1>
-        <p className="mt-4 text-3xl text-black hero-text">
+        <p className="mt-4 text-xl md:text-3xl text-black hero-text">
           Our platform connects individuals with resources and opportunities to improve their lives and lift themselves out of poverty.
         </p>
-        <div className="mt-8 cta-buttons flex justify-center space-x-4">
+        <div className="mt-8 cta-buttons flex justify-center space-x-2 md:space-x-4">
           <Link to="/signup">
-            <button className="px-6 py-3 bg-green-500 text-white text-lg rounded-md hover:bg-green-600 transition-colors">
+            <button className="px-4 py-2 md:px-6 md:py-3 bg-green-500 text-white text-lg rounded-md hover:bg-green-600 transition-colors">
               Get Started
             </button>
           </Link>

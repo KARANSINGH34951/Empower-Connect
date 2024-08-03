@@ -3,9 +3,9 @@ import img2 from "../utilis/images/tilak.jpg"
 import img3 from "../utilis/images/mohith.jpg"
 const AboutUs = () => {
   return (
-    <div className='container mx-auto px-4 py-16'>
-      <h1 className='text-4xl font-bold text-center mb-8'>About Us</h1>
-      <p className='text-lg text-gray-800 mb-8'>
+    <div className='container mx-auto px-4 py-16 bg-white'>
+      <h1 className='text-4xl  font-bold text-center mb-8'>About Us</h1>
+      <p className='text-lg text-black mb-8'>
         Welcome to our platform! We are a dedicated team passionate about making a difference through volunteering and community support. Our mission is to connect individuals with meaningful opportunities to contribute to society and drive positive change.
       </p>
       <div className='flex flex-wrap justify-center gap-8'>

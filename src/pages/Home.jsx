@@ -7,8 +7,8 @@ import Slider from '../components/Slider';
 import StorySection from '../components/StorySection';
 import ProjectSection from '../components/ProjectSection';
 import Herotext from '../customehooks/Herotext';
-import Partners from './partners';
 import TwoColumnSection2 from '../components/Twosection2';
+import Resource from "../components/EducationComponent"
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -29,6 +29,7 @@ const Home = () => {
       {!user.loggedIn && ( 
       <TwoColumnSection2 />      
       )}
+      <Resource/>
     </div>
   );
 };

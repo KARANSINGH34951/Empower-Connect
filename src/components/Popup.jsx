@@ -1,5 +1,3 @@
-// Popup.js
-import React from 'react';
 
 const Popup = ({ story, onClose }) => {
   if (!story) return null;
