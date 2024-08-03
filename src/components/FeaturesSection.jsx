@@ -36,7 +36,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-12 dark:bg-gray-900 relative">
+    <section className="py-12  relative">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">Features of Our Platform</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import img from "./utilis/images/GRID BACKGROUND.jpg"
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -8,7 +9,16 @@ function App() {
 
   return (
     <>
-     <div > {/* Change bg-blue-100 to your preferred Tailwind color class */}
+     <div  
+    //  style={{
+    //     backgroundImage: `url(${img})`,
+    //     backgroundSize: 'cover',
+    //     backgroundRepeat: 'no-repeat',
+    //     backgroundAttachment: 'fixed',
+    //     backgroundPosition: 'center',
+    //     minHeight: '100vh'
+    //   }}
+      > 
       <Navbar/>
       <main>
         <Outlet/>

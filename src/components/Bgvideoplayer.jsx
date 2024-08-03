@@ -24,7 +24,7 @@ const Bgvideoplayer = () => {
       <source src={video} type='video/mp4' />
     </video>
 
-    <div className="w-full max-w-4xl mx-auto text-center py-8">
+    <div className="w-full max-w-4xl mx-auto text-center py-32">
       <h1 className="text-6xl font-bold text-gray-800 hero-text">
         Empower Connect: Join the Fight Against Poverty
       </h1>

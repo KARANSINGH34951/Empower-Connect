@@ -3,3 +3,13 @@ html, body {
   height: auto;
   overflow: auto;
 }
+
+/* src/index.css or App.css */
+/* src/index.css or App.css */
+body {
+  background-image: url('/utilis/images/GRID BACKGROUND.jpg');
+  background-size: cover; /* Adjusts the image to cover the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed on scroll */
+  background-position: center; /* Centers the image */
+}

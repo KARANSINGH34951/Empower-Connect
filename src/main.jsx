@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Signup from './pages/Signup.jsx'
 import store from '../src/utilis/strore.jsx';
 import JobResourcePage from './pages/JobResourcePage.jsx'
+import About from './pages/About.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/jobresource',
         element: <JobResourcePage />,
+      },
+      {
+        path: '/aboutus',
+        element: <About />,
       }
      
     ],
