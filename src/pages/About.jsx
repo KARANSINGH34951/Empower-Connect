@@ -10,7 +10,7 @@ const About = () => {
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}a
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold mb-4 text-center text-blue-700">Our Mission: Redefining Possibilities</h2>
@@ -54,7 +54,7 @@ const About = () => {
 
       </div>
 
-
+    <AboutUs/>
     </div>
   );
 };
