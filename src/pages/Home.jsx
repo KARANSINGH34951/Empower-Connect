@@ -6,6 +6,7 @@ import Counter from '../components/Counter';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Slider from '../components/Slider';
 import StorySection from '../components/StorySection';
+import ProjectSection from '../components/ProjectSection';
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -14,7 +15,7 @@ const Home = () => {
     <div>
         <Slider/>
         <StorySection />
-        
+        <ProjectSection />
        
       {!user.loggedIn &&  <Bgvideoplayer />}
       {!user.loggedIn && <Counter />}
