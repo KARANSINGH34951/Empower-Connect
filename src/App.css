@@ -1,7 +1,7 @@
 /* Ensure the body and html allow scrolling */
 html, body {
   height: auto;
-  overflow: auto;
+  overflow-x: hidden;
   padding-top: 35px;
 }
 
