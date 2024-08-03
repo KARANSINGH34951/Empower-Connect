@@ -1,3 +1,6 @@
+import img from "../utilis/images/hachathon.jpg"
+import img2 from "../utilis/images/tilak.jpg"
+import img3 from "../utilis/images/mohith.jpg"
 const AboutUs = () => {
   return (
     <div className='container mx-auto px-4 py-16'>
@@ -8,7 +11,7 @@ const AboutUs = () => {
       <div className='flex flex-wrap justify-center gap-8'>
         <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white shadow-md rounded-lg overflow-hidden'>
           <img
-            src='https://via.placeholder.com/150'
+            src={img}
             alt='Karan Singh D'
             className='w-full h-40 object-cover'
           />
@@ -19,7 +22,7 @@ const AboutUs = () => {
 
         <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white shadow-md rounded-lg overflow-hidden'>
           <img
-            src='https://via.placeholder.com/150'
+            src={img2}
             alt='Tilak P'
             className='w-full h-40 object-cover'
           />
@@ -31,7 +34,7 @@ const AboutUs = () => {
 
         <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-white shadow-md rounded-lg overflow-hidden'>
           <img
-            src='https://via.placeholder.com/150'
+            src={img3}
             alt='Mohith G'
             className='w-full h-40 object-cover'
           />

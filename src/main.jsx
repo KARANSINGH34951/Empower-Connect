@@ -12,6 +12,7 @@ import About from './pages/About.jsx'
 import Volunter from './pages/Volunter.jsx'
 import Donate from './components/Donate.jsx'
 import Partners from './pages/partners.jsx'
+import ContactUs from './pages/ContactUs.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/partners',
         element: <Partners />,
+      },
+      {
+        path: '/contactus',
+        element: <ContactUs />,
       }
      
     ],
