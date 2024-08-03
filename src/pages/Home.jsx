@@ -6,6 +6,7 @@ import Counter from '../components/Counter';
 import Slider from '../components/Slider';
 import StorySection from '../components/StorySection';
 import ProjectSection from '../components/ProjectSection';
+import Herotext from '../customehooks/Herotext';
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -14,6 +15,7 @@ const Home = () => {
     <div>
       {!user.loggedIn &&  <Bgvideoplayer />}
       {user.loggedIn &&   <Slider/>}
+      <Herotext/>
       {user.loggedIn &&    <StorySection />}   
       {user.loggedIn &&  <ProjectSection/>}   
       {!user.loggedIn && <Counter />}

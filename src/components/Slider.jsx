@@ -1,4 +1,4 @@
-import React from 'react';
+import Herotext from '../customehooks/Herotext';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -18,8 +18,6 @@ const SliderComponent = () => {
           className='w-full h-full object-cover absolute' 
           alt="slide1" 
         />
-
-        <h1 className='text-4xl relative mt-52 text-center'> Donate ,Share, smile..</h1>
       </div>
 
       <div className='w-full h-full'>
@@ -36,6 +34,7 @@ const SliderComponent = () => {
           className='w-full h-full object-cover' 
           alt="slide1" 
         />
+      
       </div>
 
       <div className='w-full h-full'>
@@ -44,6 +43,7 @@ const SliderComponent = () => {
           className='w-full h-full object-cover' 
           alt="slide1" 
         />
+        
       </div>
 
       </AutoplaySlider>
@@ -51,4 +51,3 @@ const SliderComponent = () => {
 };
 
 export default SliderComponent;
-
