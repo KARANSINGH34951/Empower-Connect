@@ -10,6 +10,7 @@ import store from '../src/utilis/strore.jsx';
 import JobResourcePage from './pages/JobResourcePage.jsx'
 import About from './pages/About.jsx'
 import Volunter from './pages/Volunter.jsx'
+import Donate from './components/Donate.jsx'
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/volunter',
         element: <Volunter />,
+      },
+      {
+        path: '/donate',
+        element: <Donate />,
       }
      
     ],
