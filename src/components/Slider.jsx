@@ -1,4 +1,4 @@
-import Herotext from '../customehooks/Herotext';
+import img2 from "../utilis/images/img2.jpg"
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -11,10 +11,11 @@ const SliderComponent = () => {
       play={true}
       cancelOnInteraction={false}
       interval={1000} 
+      
     >
       <div className='w-full h-full'>
       <img 
-          src="https://th.bing.com/th/id/OIP.Gtl2G3rnRbERaYZkxT1fPQHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" 
+          src={img2} 
           className='w-full h-full object-cover absolute' 
           alt="slide1" 
         />

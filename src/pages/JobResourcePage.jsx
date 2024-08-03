@@ -25,16 +25,16 @@ const jobs = [
     type: 'Full-time'
   },
   {
-    title: 'Customer Support Specialist',
-    description: 'Provide customer support and resolve issues.',
+    title: 'Support Staff',
+    description: 'Provide assitance to do day to day task.',
     company: 'Support Inc.',
     location: 'Remote',
     type: 'Full-time'
   },
   {
-    title: 'Customer Support Specialist',
-    description: 'Provide customer support and resolve issues.',
-    company: 'Support Inc.',
+    title: 'Teacher fro primary school',
+    description: 'Should able to communicate in English.',
+    company: 'Grow the future.',
     location: 'Remote',
     type: 'Full-time'
   },

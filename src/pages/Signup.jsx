@@ -1,7 +1,7 @@
 // src/components/Signup.jsx
 import { useState, useEffect } from 'react';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { app } from '../utilis/firebase'; // Ensure the correct path to your config file
+import  app  from '../utilis/firebase'; // Ensure the correct path to your config file
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { login, logout } from '../utilis/userSlice'; // Ensure the correct path to your userSlice

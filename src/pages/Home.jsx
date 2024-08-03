@@ -7,6 +7,8 @@ import Slider from '../components/Slider';
 import StorySection from '../components/StorySection';
 import ProjectSection from '../components/ProjectSection';
 import Herotext from '../customehooks/Herotext';
+import Partners from './partners';
+import TwoColumnSection2 from '../components/Twosection2';
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -19,9 +21,13 @@ const Home = () => {
       {user.loggedIn &&    <StorySection />}   
       {user.loggedIn &&  <ProjectSection/>}   
       {!user.loggedIn && <Counter />}
+     
       <FeaturesSection />
       {!user.loggedIn && ( 
       <TwoColumnSection />      
+      )}
+      {!user.loggedIn && ( 
+      <TwoColumnSection2 />      
       )}
     </div>
   );

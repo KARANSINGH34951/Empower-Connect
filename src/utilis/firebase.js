@@ -1,9 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
-
+// AIzaSyA8mXK40AMI10tw6E0o51aN7PRTTgr-M7M
 const firebaseConfig = {
-  apiKey:"AIzaSyA8mXK40AMI10tw6E0o51aN7PRTTgr-M7M",
+  apiKey:import.meta.env.VITE_API_KEY, 
   authDomain: "ibm-skill.firebaseapp.com",
   projectId: "ibm-skill",
   storageBucket: "ibm-skill.appspot.com",
@@ -15,5 +15,5 @@ const firebaseConfig = {
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
-
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+export default app; 

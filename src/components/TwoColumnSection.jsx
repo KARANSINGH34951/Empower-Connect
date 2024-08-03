@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const TwoColumnSection = () => {
   return (
@@ -8,9 +9,11 @@ const TwoColumnSection = () => {
           <div className='bg-white shadow-md rounded-lg overflow-hidden'>
             <img src='https://th.bing.com/th/id/OIP.srRlg0TPHCnuF6S2UoqYUgHaDt?w=300&h=174&c=7&r=0&o=5&dpr=1.5&pid=1.7' alt='Description' className='w-full h-64 object-cover' />
             <div className='p-6'>
+              <Link to="/signup">
               <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
                 Learn More
               </button>
+              </Link>
             </div>
           </div>
         </div>

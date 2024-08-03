@@ -11,6 +11,7 @@ import JobResourcePage from './pages/JobResourcePage.jsx'
 import About from './pages/About.jsx'
 import Volunter from './pages/Volunter.jsx'
 import Donate from './components/Donate.jsx'
+import Partners from './pages/partners.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/donate',
         element: <Donate />,
+      },
+      {
+        path: '/partners',
+        element: <Partners />,
       }
      
     ],

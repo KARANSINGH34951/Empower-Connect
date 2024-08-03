@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AboutUs from '../components/AboutUs';
 
 const About = () => {
   return (
@@ -47,10 +48,13 @@ const About = () => {
               <li>Community Collaboration</li>
             </ul>
           </motion.div>
+
+          
         </div>
 
-        
       </div>
+
+
     </div>
   );
 };

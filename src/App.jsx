@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import img from "./utilis/images/GRID BACKGROUND.jpg"
+
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     //   }}
       > 
       <Navbar/>
-      <main>
+      <main >
         <Outlet/>
       </main>
       <Footer/>

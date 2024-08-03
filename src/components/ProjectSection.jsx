@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectPieChart from './ProjectPieChart';
 import ImageCard from './ImageCard';
-import image from '../utilis/images/GRID BACKGROUND.jpg'; // Replace with the actual path to your image
+import image from '../utilis/images/img2.jpg'; // Replace with the actual path to your image
 
 const ProjectSection = () => {
   return (
