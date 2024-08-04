@@ -6,7 +6,7 @@ const TwoColumnSection = () => {
     <div className='container mx-auto px-4 py-16'>
       <div className='flex flex-wrap lg:flex-nowrap items-center'>
         <div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
-          <div className='bg-white shadow-md rounded-lg overflow-hidden'>
+          <div className='border border-white shadow-md rounded-lg overflow-hidden'>
             <img src='https://th.bing.com/th/id/OIP.srRlg0TPHCnuF6S2UoqYUgHaDt?w=300&h=174&c=7&r=0&o=5&dpr=1.5&pid=1.7' alt='Description' className='w-full h-64 object-cover' />
             <div className='p-6'>
               <Link to="/signup">

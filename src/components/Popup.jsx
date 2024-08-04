@@ -4,7 +4,7 @@ const Popup = ({ story, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="relative bg-white p-8 rounded-lg max-w-lg w-full mx-4 md:mx-auto">
+      <div className="relative bg-black p-8 rounded-lg max-w-lg w-full mx-4 md:mx-auto">
         <button 
           onClick={onClose} 
           className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 focus:outline-none"

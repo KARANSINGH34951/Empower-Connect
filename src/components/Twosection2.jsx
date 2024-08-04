@@ -23,7 +23,7 @@ const TwoColumnSection = () => {
         </div>
 
         <div className='w-full lg:w-1/2 mt-8 lg:mt-0'>
-          <div className='bg-white shadow-md rounded-lg overflow-hidden'>
+          <div className='border border-white shadow-md rounded-lg overflow-hidden'>
             <img
               src={img3}
               alt='Volunteering'

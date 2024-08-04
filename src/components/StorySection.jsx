@@ -15,7 +15,7 @@ const StorySection = () => {
   };
 
   return (
-    <div className="container w-full m-20 text-white">
+    <div className="container w-full m-20 text-white px-10">
       <h1 className="text-6xl font-bold text-center mb-10">Life-Changing Stories</h1>
       <div className="flex justify-center items-center">
         <div className="flex flex-wrap justify-center mx-2">

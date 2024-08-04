@@ -1,11 +1,11 @@
 
 const StoryComponent = ({ story, onReadMore }) => {
   return (
-    <div className="w-80 rounded overflow-hidden shadow-lg mx-2 my-5 text-white bg-white">
+    <div className="w-80 rounded overflow-hidden shadow-lg mx-2 my-5 text-white border border-white ">
       <img className="w-full h-48 object-cover" src={story.image} alt={story.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{story.title}</div>
-        <p className="text-gray-700 text-base">
+        <p className="text-gray-50 text-base">
           {story.summary}
         </p>
         <button
