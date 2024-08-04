@@ -9,6 +9,7 @@ import ProjectSection from '../components/ProjectSection';
 import Herotext from '../customehooks/Herotext';
 import TwoColumnSection2 from '../components/Twosection2';
 import Resource from "../components/EducationComponent"
+import Chartbot from "../components/Chatbot"
 
 const Home = () => {
   const user = useSelector((state) => state.user);
@@ -21,6 +22,8 @@ const Home = () => {
       {user.loggedIn &&    <StorySection />}   
       {user.loggedIn &&  <ProjectSection/>}   
       {!user.loggedIn && <Counter />}
+      
+      <Chartbot/>
      
       <FeaturesSection />
       {!user.loggedIn && ( 

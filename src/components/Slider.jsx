@@ -1,4 +1,4 @@
-import Herotext from '../customehooks/Herotext';
+import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -8,10 +8,10 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const SliderComponent = () => {
   return (
     <AutoplaySlider 
-      className="relative w-full h-[500px]"
+      className="relative w-full h-[500px] lg:h-[600px]"
       play={true}
       cancelOnInteraction={false}
-      interval={3000} 
+      interval={3000}
     >
       <div className="w-full h-full relative">
         <img 
@@ -19,9 +19,9 @@ const SliderComponent = () => {
           className="w-full h-full object-cover absolute" 
           alt="slide1" 
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <p className="text-white text-4xl lg:text-6xl font-bold text-center p-4">
-            "Poverty is not an accident. Like slavery and apartheid, it is man-made and can be removed by the actions of human beings."
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <p className="bg-black bg-opacity-75 text-white text-lg md:text-2xl lg:text-3xl font-bold text-center p-4 rounded">
+            "Empower Connect: Bridging the gap between potential and opportunity. Together, we can change destinies."
           </p>
         </div>
       </div>
@@ -32,9 +32,9 @@ const SliderComponent = () => {
           className="w-full h-full object-cover absolute" 
           alt="slide2" 
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <p className="text-white text-4xl lg:text-6xl font-bold text-center p-4">
-            "Ending poverty is not just about charity, but about justice and equity."
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <p className="bg-black bg-opacity-75 text-white text-lg md:text-2xl lg:text-3xl font-bold text-center p-4 rounded">
+            "Unlocking potential, fostering growth, and ensuring equitable access to resources for all."
           </p>
         </div>
       </div>
@@ -45,9 +45,9 @@ const SliderComponent = () => {
           className="w-full h-full object-cover absolute" 
           alt="slide3" 
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <p className="text-white text-4xl lg:text-6xl font-bold text-center p-4">
-            "Poverty is the worst form of violence."
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <p className="bg-black bg-opacity-75 text-white text-lg md:text-2xl lg:text-3xl font-bold text-center p-4 rounded">
+            "Transforming lives through education, job opportunities, and community support."
           </p>
         </div>
       </div>
@@ -58,13 +58,12 @@ const SliderComponent = () => {
           className="w-full h-full object-cover absolute" 
           alt="slide4" 
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <p className="text-white text-4xl lg:text-6xl font-bold text-center p-4">
-            "We can end poverty by ensuring everyone has the opportunity to thrive."
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <p className="bg-black bg-opacity-75 text-white text-lg md:text-2xl lg:text-3xl font-bold text-center p-4 rounded">
+            "Empower Connect: Your pathway to a brighter future, where every step counts."
           </p>
         </div>
       </div>
-
     </AutoplaySlider>
   );
 };

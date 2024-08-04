@@ -6,7 +6,7 @@ const Counter = () => {
   const [counter, setCounter] = useState(false);
 
   return (
-    <div className='px-4 py-8 md:px-10 md:py-12 md:mt-32 shadow-lg text-white'>
+    <div className='px-4 py-8 md:px-10 md:py-12 md:mt-32 shadow-lg text-violet-500'>
       <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>
         <div className='flex flex-wrap justify-around items-center text-center'>
           <div className='m-4'>

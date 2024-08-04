@@ -1,16 +1,17 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import AboutUs from '../components/AboutUs';
+import img from "../utilis/images/hachathon.jpg";
+import img2 from "../utilis/images/tilak.jpg";
+import img3 from "../utilis/images/mohith.jpg";
 
 const About = () => {
   return (
-    <div className=" min-h-screen flex items-center justify-center py-10">
+    <div className="min-h-screen flex flex-col items-center py-10">
       <div className="container mx-auto px-4 my-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}a
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl font-bold mb-4 text-center text-blue-700">Our Mission: Redefining Possibilities</h2>
@@ -48,13 +49,52 @@ const About = () => {
               <li>Community Collaboration</li>
             </ul>
           </motion.div>
-
-          
         </div>
-
       </div>
 
-    <AboutUs/>
+      <div className="container mx-auto px-4 py-16 ">
+        <h1 className="text-4xl font-bold text-center mb-8 text-green-600">About Us</h1>
+        <p className="text-lg mb-8 text-center text-white">
+          Welcome to our platform! We are a dedicated team passionate about making a difference through volunteering and community support. Our mission is to connect individuals with meaningful opportunities to contribute to society and drive positive change.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src={img}
+              alt="Karan Singh D"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">Karan Singh D</h2>
+              <h4 className='text-green-600'>Team Lead</h4>
+            </div>
+          </div>
+
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src={img2}
+              alt="Tilak P"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">Tilak P</h2>
+              <h4 className='text-green-600'> Web developer</h4>
+            </div>
+          </div>
+
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img
+              src={img3}
+              alt="Mohith G"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">Mohith G</h2>
+              <h4 className='text-green-600'>UI & UX</h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

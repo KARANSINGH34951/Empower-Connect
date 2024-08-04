@@ -14,18 +14,20 @@ const Donate = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center py-24">
+    <div className=" min-h-screen flex flex-col items-center py-24">
       <div className="container mx-auto px-4 grid grid-cols-1 gap-8 lg:grid-cols-2">
         <motion.div
-          className="bg-white p-6 rounded-lg shadow-lg"
+          className=" p-6 rounded-lg shadow-lg"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl font-bold mb-4 text-center text-blue-700">Make a Difference: Donate Today</h1>
+         <div className='bg-gray-200 p-10 rounded-md'>
+         <h1 className="text-4xl font-bold mb-4 text-center text-blue-700">Make a Difference: Donate Today</h1>
           <p className="text-gray-700 text-base mb-4">
             Your donation helps us to continue our mission of fighting poverty and supporting those in need. Every contribution, no matter the size, makes a significant impact. Join us in making a difference.
           </p>
+         </div>
         </motion.div>
 
         <motion.div

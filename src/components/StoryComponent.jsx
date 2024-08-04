@@ -5,7 +5,7 @@ const StoryComponent = ({ story, onReadMore }) => {
       <img className="w-full h-48 object-cover" src={story.image} alt={story.title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{story.title}</div>
-        <p className="text-gray-50 text-base">
+        <p className="text-gray-50s text-base">
           {story.summary}
         </p>
         <button

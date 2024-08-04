@@ -15,16 +15,14 @@ const StorySection = () => {
   };
 
   return (
-    <div className="container w-full m-20 text-white px-10">
-      <h1 className="text-6xl font-bold text-center mb-10">Life-Changing Stories</h1>
-      <div className="flex justify-center items-center">
-        <div className="flex flex-wrap justify-center mx-2">
-          {stories.map((story) => (
-            <StoryComponent key={story.id} story={story} onReadMore={handleReadMore} />
-          ))}
-        </div>
-        {selectedStory && <Popup story={selectedStory} onClose={handleClosePopup} />}
+    <div className="container mx-auto py-16 px-4 text-white">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10">Life-Changing Stories</h1>
+      <div className="flex flex-wrap justify-center">
+        {stories.map((story) => (
+          <StoryComponent key={story.id} story={story} onReadMore={handleReadMore} />
+        ))}
       </div>
+      {selectedStory && <Popup story={selectedStory} onClose={handleClosePopup} />}
     </div>
   );
 };
