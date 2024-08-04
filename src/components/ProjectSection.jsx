@@ -5,7 +5,7 @@ import image from '../utilis/images/img2.jpg'; // Replace with the actual path t
 
 const ProjectSection = () => {
   return (
-    <div className="container mx-auto px-4 py-16 text-white">
+    <div className="container mx-auto px-4 py-16 text-white md:px-7 lg:px-10">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
           <ImageCard image={image} altText="Empower Connect" />
