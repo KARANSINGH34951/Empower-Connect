@@ -30,10 +30,10 @@ const Bgvideoplayer = () => {
       </video>
 
       <div className="relative z-10 w-full max-w-4xl mx-auto text-center py-32 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-black hero-text">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-600 hero-text">
           Empower Connect: Join the Fight Against Poverty
         </h1>
-        <p className="mt-4 text-xl md:text-3xl text-black hero-text">
+        <p className="mt-4 text-xl md:text-3xl text-white hero-text">
           Our platform connects individuals with resources and opportunities to improve their lives and lift themselves out of poverty.
         </p>
         <div className="mt-8 cta-buttons flex justify-center space-x-2 md:space-x-4">

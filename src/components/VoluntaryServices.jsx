@@ -15,7 +15,7 @@ const VoluntaryServices = () => {
           <p className=" text-base mb-4 text-white">
             Volunteering with us means more than just giving your time. It’s about making a lasting impact in the fight against poverty. We offer a range of opportunities for you to contribute in meaningful ways. Explore how you can be part of our mission to create positive change.
           </p>
-        </motion.div>
+        </motion.div>c
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div

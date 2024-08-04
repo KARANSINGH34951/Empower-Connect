@@ -38,8 +38,9 @@ const Footer = () => {
 
           <div className='w-full md:w-1/3'>
             <h2 className='text-2xl font-bold mb-4 text-orange-600'>Contact Us</h2>
-            <p className='text-gray-400'>Email: karan@empowerconnect.com</p>
-            <p className='text-gray-400'>Phone: 1234567890</p>
+            <p className='text-gray-400'>Email: ceitkaransingh2026@gmail.com
+            </p>
+            <p className='text-gray-400'>Phone: 8015773495</p>
             <div className='mt-4 flex space-x-4'>
               <a href='#' className='text-gray-400 hover:text-white'>
                 <i className='fab fa-facebook-f'></i>

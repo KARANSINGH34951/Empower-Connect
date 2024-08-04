@@ -109,9 +109,9 @@ const Signup = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-      <div className="sign-up-container p-8 bg-white rounded-lg shadow-lg max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">
+    <div className="flex justify-center items-center min-h-screen  ">
+      <div className="sign-up-container p-8 border border-6 border-blue-600 rounded-lg shadow-lg max-w-md w-full">
+        <h2 className="text-2xl font-bold mb-4 text-center text-blue-600">
           {signIn ? "Sign Up" : "Sign In"}
         </h2>
 
@@ -164,7 +164,7 @@ const Signup = () => {
               checked={acceptedTerms}
               className="mr-2"
             />
-            <label htmlFor="terms" className="text-gray-700">I accept the terms and conditions</label>
+            <label htmlFor="terms" className="text-white">I accept the terms and conditions</label>
           </div>
         )}
 
@@ -188,7 +188,7 @@ const Signup = () => {
           )}
         </button>
 
-        <button className="text-center text-black justify-center p-3" onClick={toggleSignIn}>
+        <button className="text-center text-white justify-center p-3" onClick={toggleSignIn}>
           {signIn ? "Already a User? Sign In" : "New User? Sign Up Now"}
         </button>
 
